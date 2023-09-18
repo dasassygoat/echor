@@ -1,2 +1,9 @@
-    Finished dev [unoptimized + debuginfo] target(s) in 0.25s
-     Running `target/debug/echor -n hello world`
+   Compiling echor v0.1.0 (/Users/bryan/Code/echor)
+error[E0599]: no method named `join` found for enum `Cow<'_, str>` in the current scope
+  --> src/main.rs:24:25
+   |
+24 |     print!("{}{}", text.join(" "), if omit_newline { "" } else { "\n" });
+   |                         ^^^^ method not found in `Cow<'_, str>`
+
+For more information about this error, try `rustc --explain E0599`.
+error: could not compile `echor` (bin "echor") due to previous error
