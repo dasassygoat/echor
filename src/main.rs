@@ -15,7 +15,7 @@ fn main() {
         .arg(
             Arg::with_name("omit_newline")
                 .short("n")
-                .help("Don't print newline")
+                .help("Don't print newline...")
                 .takes_value(false),
         )
         .get_matches();
